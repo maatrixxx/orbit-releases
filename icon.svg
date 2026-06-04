@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="planet" cx="38%" cy="32%" r="70%">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blurglow">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <circle cx="128" cy="128" r="90" fill="url(#glow)" filter="url(#blurglow)"/>
+  <path d="M 23 128 A 105 37 0 0 0 233 128" fill="none" stroke="#2e1065" stroke-width="22" stroke-linecap="round"/>
+  <path d="M 23 128 A 105 37 0 0 0 233 128" fill="none" stroke="#a78bfa" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="128" cy="128" r="62" fill="url(#planet)"/>
+  <path d="M 23 128 A 105 37 0 0 1 233 128" fill="none" stroke="#2e1065" stroke-width="22" stroke-linecap="round"/>
+  <path d="M 23 128 A 105 37 0 0 1 233 128" fill="none" stroke="#a78bfa" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="233" cy="128" r="10" fill="#e9d5ff"/>
+</svg>
